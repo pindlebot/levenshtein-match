@@ -5,9 +5,10 @@ const prepare = () => {
   const strings = fs.readFileSync(path.join(__dirname, 'data.txt'), { encoding: 'utf8' }).split(/\r?\n/g)
   const arr = [1,2,3,4,5]
   const genRandomString = () => {
-    return arr.map(() => {
+    let str = arr.map(() => {
       return strings[Math.floor(Math.random() * strings.length)]
     }).join(' ')
+    return str
   }
 
   let options = arr.map(genRandomString)
