@@ -11,5 +11,9 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unshift/levenshtein-match.git"
   }
 }
